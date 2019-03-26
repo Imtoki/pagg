@@ -1,39 +1,87 @@
-html,
-body,
-header,
-.view {
-    height: 100%;
-}
-
-@media (max-width: 740px) {
     html,
     body,
     header,
     .view {
-        height: 100vh;
+        height: 100%;
     }
-}
-
-main {
-    background: linear-gradient(to bottom, #9966ff 0%, #ff3399 100%);
-}
-
-.top-nav-collapse {
-    background-color: #563e91 !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-    background: transparent !important;
-}
-
-@media (max-width: 991px) {
+    
+    @media (max-width: 740px) {
+        html,
+        body,
+        header,
+        .view {
+            height: 100vh;
+        }
+    }
+    
+    .top-nav-collapse {
+        background-color: #563e91 !important;
+    }
+    
     .navbar:not(.top-nav-collapse) {
-        background: #563e91 !important;
+        background: transparent !important;
     }
-}
-
-.rgba-gradient {
-    background: -moz-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
-    background: linear-gradient(to 45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
-}
+    
+    @media (max-width: 991px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #563e91 !important;
+        }
+    }
+    
+    .rgba-gradient {
+        background: -moz-linear-gradient(45deg, rgba(13, 17, 198, 0.69), rgba(213, 15, 61, 0.6)100%);
+        background: -webkit-linear-gradient(45deg, rgba(13, 17, 198, 0.69), rgba(213, 15, 61, 0.6)100%);
+        background: linear-gradient(to 45deg, rgba(13, 17, 198, 0.69), rgba(213, 15, 61, 0.6)100%);
+    }
+    
+    .map-container-section {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+    
+    .map-container-section iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .pricing-card .price .version {
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+        -webkit-border-radius: .25rem .25rem 0 0;
+        border-radius: .25rem .25rem 0 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, .3);
+    }
+    
+    .pricing-card .price .number {
+        font-size: 5rem;
+        padding: 1.5rem;
+        font-weight: 300;
+    }
+    
+    .pricing-card .price {
+        position: relative;
+        padding-top: 3.94rem;
+    }
+    
+    .pricing-card .striped li {
+        border-bottom: 1px solid rgba(238, 238, 238, .298039);
+        margin-bottom: 1rem;
+    }
+    
+    .pricing-card {
+        text-align: center;
+    }
+    
+    .pricing-card ul {
+        list-style-type: none;
+        padding: 0;
+    }
